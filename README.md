@@ -1,53 +1,45 @@
-🔐 Master Password Manager
-This is a simple Python GUI application for securely creating and verifying a master password using the hashlib module and the tkinter library.
+# 🔐 Master Password Manager
 
-📋 Features
-Create and securely store a master password.
+This is a simple Python GUI application for securely creating and verifying a **master password** using the `hashlib` module and the `tkinter` library.
 
-Verify the master password for authentication.
+## 📋 Features
 
-Passwords are hashed using SHA-256 before being saved.
+- Create and securely store a master password.
+- Verify the master password for authentication.
+- Passwords are hashed using **SHA-256** before being saved.
+- Simple and intuitive graphical interface built with Tkinter.
 
-Simple and intuitive graphical interface built with Tkinter.
+## 🚀 How It Works
 
-🚀 How It Works
-Create Master Password:
+1. **Create Master Password:**
+   - Click on **"Create Master Password"**.
+   - Enter your desired password and click **"Create"**.
+   - The password is hashed and saved to a file named `master.txt`.
 
-Click on "Create Master Password".
+2. **Verify Master Password:**
+   - Click on **"Verify Master Password"**.
+   - Enter the password and click **"Verify"**.
+   - The password is hashed and compared with the stored hash in `master.txt`.
 
-Enter your desired password and click "Create".
+## 🔧 Requirements
 
-The password is hashed and saved to a file named master.txt.
+- Python 3.x
+- No external libraries required. Uses built-in modules:
+  - `tkinter` for GUI
+  - `hashlib` for password hashing
 
-Verify Master Password:
+## 📦 Installation & Running
 
-Click on "Verify Master Password".
+1. Clone or download the repository.
+2. Run the Python script:
 
-Enter the password and click "Verify".
-
-The password is hashed and compared with the stored hash in master.txt.
-
-🔧 Requirements
-Python 3.x
-
-No external libraries required. Uses built-in modules:
-
-tkinter for GUI
-
-hashlib for password hashing
-
-📦 Installation & Running
-Clone or download the repository.
-
-Run the Python script:
-
-bash
-Kopyala
-Düzenle
+```bash
 python password_manager.py
-Ensure that the file is named password_manager.py or any other name you prefer.
+```
 
-🔐 Security Note
-This application only stores the hashed password, not the raw password itself.
+> Ensure that the file is named `password_manager.py` or any other name you prefer.
 
-For a production-grade password manager, consider using proper encryption libraries, secure storage mechanisms, and password salting.
+## 🔐 Security Note
+
+- This application **only stores the hashed password**, not the raw password itself.
+- For a production-grade password manager, consider using proper encryption libraries, secure storage mechanisms, and password salting.
